@@ -1,0 +1,37 @@
+//
+//  AdSetQDINativeLayoutParams.h
+//  AdSetQDIAdSDK
+//
+//  Created by xuejingwei on 2025/8/13.
+//
+
+#import <UIKit/UIKit.h>
+#import <AdSetQDIAdSDK/AdSetQDINativePrepareInfo.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+typedef NS_ENUM(NSUInteger, AdSetQDINativeAdOfferVideoPlayType) {
+    AdSetQDINativeAdOfferVideoPlayAlwaysAutoPlayType  = 0,
+    AdSetQDINativeAdOfferVideoPlayOnlyWiFiAutoPlayType,
+    AdSetQDINativeAdOfferVideoPlayClickAutoPlayType,
+};
+
+@interface AdSetQDINativeLayoutParams : UIView
+
+/**
+ You can store some extra network specific context info in this dictionary.
+ */
+@property (nonatomic, copy) NSDictionary *context;
+@property (nonatomic) Class renderingViewClass;
+@property (nonatomic) CGRect AdFrame;
+@property (nonatomic) CGRect mediaViewFrame;
+@property (nonatomic, weak) UIViewController *rootViewController;
+@property (nonatomic) BOOL sizeToFit;
+@property (nonatomic) BOOL useCustomPlayer;
+@property (nonatomic, assign) AdSetQDINativeAdOfferVideoPlayType videoPlayType;
+@property (nonatomic, assign) CGRect logoViewFrame;
+@property (nonatomic, assign) CGPoint adChoicesViewOrigin;
+
+@end
+
+NS_ASSUME_NONNULL_END
