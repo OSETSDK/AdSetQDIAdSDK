@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "AdSetQDIAdSDK"
-  s.version      = "6.5.75.2"
+  s.version      = "6.5.75.3"
   s.summary      = "AdSet广告对接聚合类"
   s.description  = <<-DESC
                     AdSetQDIAdSDK 是一个专业的广告聚合SDK，提供高效的广告展示和收益优化功能。
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author       = { 'shenshi' => 'yaohaofei@shenshiads.com' }
   
   # 设置最低支持版本
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '11.0'
   
   # 源文件配置
   s.source       = {
